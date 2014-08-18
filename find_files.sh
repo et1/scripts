@@ -4,7 +4,7 @@ WORK_DIR=$1
 SEARCH_STRING=$2
 OUTPUT_DIR=$3 
 
-USAGE="echo Usage: $0 <working directory> <copy number> <output directory>. All parameters must be entered"
+USAGE="echo Usage: $0 <working directory> <search string> <output directory>. All parameters must be entered"
 
 # Check for both parameters
 if [ $# != 3 ]; then
