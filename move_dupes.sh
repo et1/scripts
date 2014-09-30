@@ -21,5 +21,5 @@ fi
 
 # Check for valid directories
 if [ -d "$WORK_DIR" ] && [ -d "$OUTPUT_DIR" ]; then
-	find $WORK_DIR -type f -name "*($COPY_NUM)*" -print0 | xargs -0 mv $OUTPUT_DIR
+	find $WORK_DIR -type f -iname "*($COPY_NUM)*" -print0 | xargs -0 -I '{}' /bin/mv "{}" $OUTPUT_DIR
 fi
